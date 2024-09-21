@@ -1,0 +1,36 @@
+###
+// as 3 hashtags são pra separar cada endpoint
+// vê tudo cadastrado no banco escolhido
+GET http://localhost:3333/
+
+
+###
+
+// cria novo usuario unico na tabela escolhida em new-x
+POST http://localhost:3333/new-funcionarios
+Content-Type: application/json
+
+{
+    "name": "Zayon Melo", 
+    "idade": "16", 
+    "cargo":"caixa"
+}
+
+
+###
+
+//alter o usuario escolhido pelo id, em alter-(id)
+PUT http://localhost:3333/alter-funcionarios/9fc07764-54c0-435f-b5bf-a587bf85fbc5
+Content-Type: application/json
+
+{
+    "name": "João", 
+    "idade": "26", 
+    "cargo":"Açougue"
+}
+
+###
+//deleta usuario pelo id, delete-(id)
+DELETE http://localhost:3333/delete-funcionarios/9fc07764-54c0-435f-b5bf-a587bf85fbc5
+
+
